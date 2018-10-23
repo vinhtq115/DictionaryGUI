@@ -1,0 +1,29 @@
+﻿absent	vắng mặt
+account	tài khoản
+adult	người lớn
+air	không khí
+behind	đằng sau
+best	tốt nhất
+blade	lưỡi dao
+blood	máu
+call	gọi
+cancel	hủy
+cave	hang động
+deny	từ chối
+dog	con chó
+duck	cúi đầu xuống
+egg	trứng
+duck	con vịt
+enemy	kẻ thù
+explain	giải thích
+eye	mắt
+face	mặt
+family	gia đình
+fat	béo
+fee	phí
+general	chung
+ghost	ma
+gift	quà tặng
+grass	cỏ
+hat	mũ
+health	sức khỏe
