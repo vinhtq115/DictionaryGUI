@@ -1,29 +1,394 @@
-﻿absent	vắng mặt
-account	tài khoản
-adult	người lớn
-air	không khí
-behind	đằng sau
-best	tốt nhất
-blade	lưỡi dao
-blood	máu
-call	gọi
-cancel	hủy
-cave	hang động
-deny	từ chối
-dog	con chó
-duck	cúi đầu xuống
-egg	trứng
-duck	con vịt
-enemy	kẻ thù
-explain	giải thích
-eye	mắt
-face	mặt
-family	gia đình
-fat	béo
-fee	phí
-general	chung
-ghost	ma
-gift	quà tặng
-grass	cỏ
-hat	mũ
-health	sức khỏe
+﻿abandon	bỏ, từ bỏ
+abandoned	bị bỏ rơi, bị ruồng bỏ
+ability	khả năng, năng lực
+able	có năng lực, có tài
+about	khoảng, về
+above	ở trên, lên trên
+abroad	ở, ra nước ngoài, ngoài trời
+absence	sự vắng mặt
+absent	vắng mặt, nghỉ
+absolute	tuyệt đối, hoàn toàn
+absolutely	tuyệt đối, hoàn toàn
+absorb	thu hút, hấp thu, lôi cuốn
+abuse	lộng hành, lạm dụng
+academic	thuộc học viện, đh, viện hàn lâm
+accent	trọng âm, dấu trọng âm
+accept	chấp nhận, chấp thuận
+acceptable	có thể chấp nhận, chấp thuận
+access	lối, cửa, đường vào
+accident	tai nạn, rủi ro
+accidental	tình cờ, bất ngờ
+accidentally	tình cờ, ngẫu nhiên
+accommodation	sự thích nghi, điều tiết
+accompany	đi theo, đi cùng, kèm theo
+act	hành động, hành vi, cử chỉ, đối xử
+action	hành động, hành vi, tác động
+active	tích cực hoạt động, nhanh nhẹn
+actor	diễn viên
+actress	diễn viên
+actual	thực tế, có thật
+actually	hiện nay, hiện tại
+adapt	tra, lắp vào
+add	cộng, thêm vào
+addition	tính cộng, phép cộng
+additional	thêm vào, tăng thêm
+affect	làm ảnh hưởng, tác động đến
+afford	có thể, có đủ khả năng, điều kiện
+afraid	sợ, sợ hãi, hoảng sợ
+after	sau, đằng sau, sau khi
+afternoon	buổi chiều
+afterwards	sau này, về sau, rồi thì, sau đấy
+again	lại, nữa, lần nữa
+against	chống lại, phản đối
+age	tuổi
+aged	già đi
+agency	tác dụng, lực; môi giới, trung gian
+agent	đại lý, tác nhân
+ago	trước đây
+agree	đồng ý, tán thành
+agreement	sự đồng ý, tán thành; hiệp định, hợp đồng
+ahead	trước, về phía trước
+aid	sự giúp đỡ; thêm vào, phụ vào
+aim	sự nhắm , mục tiêu, ý định; nhắm, tập trung, hướng vào
+air	không khí, bầu không khí, không gian
+aircraft	máy bay, khí cầu
+alarm	báo động, báo nguy
+alarmin	làm lo sợ, làm hốt hoảng, làm sợ hãi
+alcohol	rượu cồn
+alive	sống, vẫn còn sống, còn tồn tại
+all	tất cả
+all right	tốt, ổn, khỏe mạnh; được
+allied	liên minh, đồng minh, thông
+allow	cho phép, để cho
+ally	nước đồng minh, liên minh; liên kết, lien minh, kết thông gia
+alone	cô đơn, một mình
+along	dọc theo, theo; theo chiều dài, suốt theo
+alongside	sát cạnh, kế bên, dọc theo
+aloud	lớn tiếng, to tiếng
+although	mặc dù, dẫu cho
+altogether	hoàn toàn, hầu như; nói chung
+always	luôn luôn
+amaze	làm ngạc nhiên, làm sửng sốt
+amazed	kinh ngạc, sửng sốt
+amazing	kinh ngạc, sửng sốt
+ambition	hoài bão, khát vọng
+ambulance	xe cứu thương, xe cấp cứu
+among	giữa, ở giữa
+avoid	tránh, tránh xa
+awake	đánh thức, làm thức dậy
+award	phần thưởng; tặng, thưởng
+aware	biết, nhận thức, nhận thức thấy
+away	xa, xa cách, rời xa, đi xa
+awful	oai nghiêm, dễ sợ
+awkward	vụng về, lung túng
+back	lưng, về phía sau, trở lại
+background	phía sau; nền
+backward	về phía sau, lùi lại
+bacteria	vi khuẩn
+bad	xấu, tồi
+bad-tempered	xấu tính, dễ nổi cáu
+badly	xấu, tồi
+bag	bao, túi, cặp xách
+baggage	hành lý
+bake	nung, nướng bằng lò
+balance	cái cân; làm cho cân bằng, tương xứng
+ball	quả bóng
+ban	cấm, cấm chỉ; sự cấm
+band	băng, đai, nẹp
+bandage	dải băng; băng bó
+bank	bờ  , đê
+bar	quán bán rượu
+bargain	sự mặc cả, sự giao kèo mua bán
+barrier	đặt chướng ngại vật
+base	cơ sở, cơ bản, nền móng; đặt tên, đặt cơ sở trên cái gì
+basic	cơ bản, cơ sở
+basically	cơ bản, về cơ bản
+become	trở thành, trở nên
+bed	cái giường
+bedroom	phòng ngủ
+beef	thịt bò
+beer	rượu bia
+befor	trước, đằng trước
+begin	bắt đầu, khởi đầu
+beginning	phần đầu, lúc bắt đầu, lúc khởi đầu
+behalf	sự thay mặt
+behave	đối xử, ăn ở, cư xử
+behind	sau, ở đằng sau
+belief	lòng tin, đức tin, sự tin tưởng
+believe	tin, tin tưởng
+bell	cái chuông, tiếng chuông
+belong	thuộc về, của, thuộc quyền sở hữu
+camera	máy ảnh
+camp	trại, chỗ cắm trại; cắm trại, hạ trại
+campaig	chiến dịch, cuộc vận động
+camping	sự cắm trại
+can modal	có thể; nhà tù, nhà giam, bình, ca đựng
+cancel	hủy bỏ, xóa bỏ
+cancer	bệnh ung thư
+candidate	người ứng cử, thí sinh, người dự thi
+candy	kẹo
+cannot	không thể
+cap	mũ lưỡi trai, mũ vải
+capable	có tài, có năng lực; có khả năng, cả gan
+care	sự chăm sóc, chăm nom; chăm sóc
+career	nghề nghiệp, sự nghiệp
+careful	cẩn thận, cẩn trọng, biết giữ gìn
+carefully	cẩn thận, chu đáo
+careless	sơ suất, cầu thả
+carpet	tấm thảm, thảm
+carrot	củ cà rốt
+carry	mang, vác, khuân chở
+case	vỏ, ngăn, túi
+cash	tiền, tiền mặt
+cast	quăng, ném, thả, đánh gục; sự quăng, sự ném
+castle	thành trì, thành quách
+cat	con mèo
+catch	bắt lấy, nắm lấy, tóm lấy, chộp lấy
+category	hạng, loại; phạm trù
+cause	nguyên nhân, nguyên do; gây ra, gây nên
+cease	dừng, ngừng, ngớt, thôi, hết, tạnh
+chance	sự may mắn
+change	thay đổi, sự thay đổi, sự biến đổi
+channel	kênh , eo biển
+chapter	chương
+character	tính cách, đặc tính, nhân vật
+characteristic	riêng, riêng biệt, đặc trưng, đặc tính, đặc điểm
+charge	nhiệm vụ, bổn phận, trách nhiệm; giao nhiệm vụ, giao việc
+charity	lòng từ thiện, lòng nhân đức; sự bố thí
+chart	đồ thị, biểu đồ; vẽ đồ thị, lập biểu đồ
+chase	săn bắt; sự săn bắt
+chat	nói chuyện, tán gẫu; chuyện phiếm, chuyện gẫu
+cheap	rẻ
+cheaply	rẻ, rẻ tiền
+cheat	lừa, lừa đảo; trò lừa đảo, trò gian lận
+check	kiểm tra; sự kiểm tra
+concert	buổi hòa nhạc
+conclude	kết luận, kết thúc, chấm dứt
+conclusion	sự kết thúc, sự kết luận, phần kết luận
+concrete	bằng bê tông; bê tông
+condition	điều kiện, tình cảnh, tình thế
+conduct	điều khiển, chỉ đạo, chỉ huy; sự điều khiển, chỉ
+conference	hội nghị, sự bàn bạc
+confidence	lòng tin tưởng, sự tin cậy
+confident	tin tưởng, tin cậy, tự tin
+confidently	tự tin
+confine	giam giữ, hạn chế
+confined	hạn chế, giới hạn
+confirm	xác nhận, chứng thực
+conflict	xung đột, va chạm; sự xung đột, sự va chạm
+confront	đối mặt, đối diện, đối chiếu
+confused	bối rối, lúng túng, ngượng
+confusing	khó hiểu, gây bối rối
+confusion	sự lộn xộn, sự rối loạn
+congratulations	sự chúc mừng, khen ngợi; lời chúc mừng, khen
+congress	đại hội, hội nghị, quốc hội
+connect	kết nối, nối
+connection	sự kết nối, sự giao kết
+conscious	tỉnh táo, có ý thức, biết rõ
+consequence	kết quả, hậu quả
+conservative	thận trọng, dè dặt, bảo thủ
+consider	cân nhắc, xem xét; để ý, quan tâm, lưu ý đến
+considerable	lớn lao, to tát, đáng kể
+considerably	đáng kể, lớn lao, nhiều
+consideration	sự cân nhắc, sự xem xét, sự để ý, sự quan tâm
+consist of	gồm có
+constant	kiên trì, bền lòng
+constantly	kiên định
+construct	xây dựng
+construction	sự xây dựng
+consult	tra cứu, tham khảo, thăm dò, hỏi ý kiến
+consumer	người tiêu dùng
+contact	sự liên lạc, sự giao thiệp; tiếp xúc
+contain	bao hàm, chứa đựng, bao gồm
+container	cái đựng, chứa; công te nơ
+contemporary	đương thời, đương đại
+content	nội dung, sự hài lòng
+contest	cuộc thi, trận đấu, cuộc tranh luận, cuộc chiến đấu, chiến tranh
+context	văn cảnh, khung cảnh, phạm vi
+continent	lục địa, đại lục
+continue	tiếp tục, làm tiếp
+continuous	liên tục, liên tiếp
+continuously	liên tục, liên tiếp
+convention	hội nghị, hiệp định, quy ước
+conventional	quy ước
+conversation	cuộc đàm thoại, cuộc trò chuyện
+convert	đổi, biến đổi
+convince	làm cho tin, thuyết phục; làm cho nhận thức thấy
+cook	nấu ăn, người nấu ăn
+cooker	lò, bếp, nồi nấu
+cookie	bánh quy
+cooking	sự nấu ăn, cách nấu ăn
+cool	mát mẻ, điềm tĩnh; làm mát
+dad	bố, cha
+daily	hàng ngày
+damage	mối hạn, điều hại, sự thiệt hại; làm hư hại, làm hỏng, gây thiệt hại
+damp	ẩm, ẩm ướt, ẩm thấp
+dance	sự nhảy múa, sự khiêu vũ; nhảy múa, khiêu vũ
+dancer	diễn viên múa, người nhảy múa
+dancing	sự nhảy múa, sự khiêu vũ
+danger	sự nguy hiểm, mối hiểm nghèo; nguy cơ, mối đe dọa
+dangerous	nguy hiểm
+dare	dám, dám đương đầu với; thách
+dark	tối, tối tăm; bóng tối, ám muội
+data	số liệu, dữ liệu
+date	ngày, kỳ, kỳ hạn, thời kỳ, thời đại; đề ngày tháng, ghi niên hiệu
+daughter	con gái
+day	ngày, ban ngày
+dead	chết, tắt
+deaf	điếc, làm thinh, làm ngơ
+deal	phân phát, phân phối; sự giao dịch, thỏa thuận mua bán
+deal with	giải quyết
+dear	thân, thân yêu, thân mến; kính thưa, thưa
+death	sự chết, cái chết
+deep	sâu, khó lường, bí ẩn
+deeply	sâu, sâu xa, sâu sắc
+defeat	đánh thắng, đánh bại; sự thất bại
+defence	cái để bảo vệ, vật để chống đỡ, sự che chở
+defend	che chở, bảo vệ, bào chữa
+define	định nghĩa
+definite	xác định, định rõ, rõ ràng
+definitely	rạch ròi, dứt khoát
+definition	sự định nghĩa, lời định nghĩa
+degree	mức độ, trình độ; bằng cấp; độ
+delay	sự chậm trễ, sự trì hoãn, sự cản trở; làm chậm trễ
+deliberate	thận trọng, có tính toán, chủ tâm, có suy nghĩ cân nhắc
+deliberately	thận trọng, có suy nghĩ cân nhắc
+delicate	thanh nhã, thanh tú, tế nhị, khó xử
+diagram	biểu đồ
+diamond	kim cương
+diary	sổ nhật ký; lịch ghi nhớ
+dictionary	từ điển
+die	chết, từ trần, hy sinh
+diet	chế độ ăn uống, chế độ ăn kiêng
+difference	sự khác nhau
+different	khác, khác biệt, khác nhau
+differently	khác, khác biệt, khác nhau
+difficult	khó, khó khăn, gay go
+difficulty	sự khó khăn, nỗi khó khăn, điều cản trở
+dig	đào bới, xới
+dinner	bữa trưa, chiều
+direct	trực tiếp, thẳng, thẳng thắn; gửi, viết cho ai, điều khiển
+direction	sự điều khiển, sự chỉ huy
+drag	lôi kéo, kéo lê
+drama	kịch, tuồng
+dramatic	như kịch, như đóng kịch, thích hợp với sân khấu
+dramatically	đột ngột
+draw	vẽ, kéo
+each	mỗi
+each other	nhau, lẫn nhau
+ear	tai
+early	sớm
+earn	kiếm
+earth	đất, trái đất
+ease	sự thanh thản, sự thoải mái; làm thanh thản, làm yên tâm, làm dễ chịu
+easily	dễ dàng
+east	hướng đông, phía đông,  đông, ở phía đông
+eastern	đông
+easy	dễ dàng, dễ tính, ung dung
+eat	ăn
+economic	kinh tế
+economy	sự tiết kiệm, sự quản lý kinh tế
+edge	lưỡi, cạnh sắc
+edition	nhà xuất bản, sự xuất bản
+editor	người thu thập và xuất bản, chủ bút
+educate	giáo dục, cho ăn học; rèn luyện
+educated	được giáo dục, được đào tạo
+education	sự giáo dục, sự rèn luyện
+effect	hiệu ứng, hiệu quả, kết quả
+effective	có kết quả, có hiệu lực
+effectively	có kết quả, có hiệu lực
+efficient	có hiệu lực, có hiệu quả
+efficiently	có hiệu quả, hiệu nghiệm
+effort	sự cố gắng, sự nỗ lực
+either	mỗi, một; cũng phải thế
+elbow	khuỷu tay
+elderly	có tuổi, cao tuổi
+elect	bầu, quyết định
+email	thư điện tử; gửi thư điện tử
+embarrass	lúng túng, làm ngượng nghịu; làm rắc rối, gây khó khăn
+embarrassed	lúng túng, bối rối, ngượng; mang nợ
+embarrassing	làm lúng túng, ngăn trở
+embarrassment	sự lúng túng, sự bối rối
+emerge	nổi lên, hiện ra; nổi bật lên
+emergency	tình trạng khẩn cấp
+emotion	xự xúc động, sự cảm động, mối xác cảm
+emotional	cảm động, xúc động, xúc cảm; dễ cảm động, dễ xúc cảm
+emotionally	xúc động
+emphasis	sự nhấn mạnh, tầm quan trọng
+emphasize	nhấn mạnh, làm nổi bật
+face	mặt, thể diện; đương đầu, đối phó, đối mặt
+facility	điều kiện dễ dàng, sự dễ dàng, thuận lợi
+fact	việc, sự việc, sự kiện
+factor	nhân tố
+factory	nhà máy, xí nghiệp, xưởng
+fail	sai, thất bại
+failure	sự thất bại, người thất bại
+faint	nhút nhát, yếu ớt
+faintly	nhút nhát, yếu ớt
+fair	hợp lý, công bằng; thuận lợi
+fairly	hợp lý, công bằng
+faith	sự tin tưởng, tin cậy; niềm tin, vật đảm bảo
+faithful	trung thành, chung thủy, trung thực
+faithfully	trung thành, chung thủy, trung thực
+fall	rơi, ngã, sự rơi, ngã
+fall asleep	ngủ thiếp đi
+fall over	ngã lộn nhào, bị đổ
+false	sai, nhầm, giả dối
+fame	tên tuổi, danh tiếng
+familiar	thân thiết, quen thộc
+family	gia đình, thuộc gia đình
+famous	người hâm mộ
+fancy	tưởng tượng, cho, nghĩ rằng; tưởng tượng
+far	xa
+farm	trang trại
+friday	thứ sáu
+fridge	tủ lạnh
+friend	người bạn
+friendly	thân thiện, thân mật
+friendship	tình bạn, tình hữu nghị
+frighten	làm sợ, làm hoảng sợ
+frightened	hoảng sợ, khiếp sợ
+frightening	kinh khủng, khủng khiếp
+from	từ
+front	mặt; đằng trước, về phía trước
+frozen	lạnh giá
+fruit	quả, trái cây
+fry	rán, chiên; thịt rán
+fuel	chất đốt, nhiên liệu
+full	đầy, đầy đủ
+fully	đầy đủ, hoàn toàn
+fun	sự vui đùa, sự vui thích; hài hước
+function	chức năng; họat động, chạy
+fund	kho, quỹ; tài trợ, tiền bạc, để tiền vào công quỹ
+go	đi
+go down	đi xuống
+go up	đi lên
+go wrong	mắc lỗi, sai lầm
+god	thần, chúa
+gold	vàng; bằng vàng
+good	tốt, hay, tuyệt; điều tốt, điều thiện
+good at	tiến bộ ở
+good for	có lợi cho
+good, well	tốt, khỏe
+grammar	văn phạm
+grand	rộng lớn, vĩ đại
+grandchild	cháu
+granddaughter	cháu gái
+grandfather	ông
+grandmother	bà
+grandparent	ông bà
+grandson	cháu trai
+intelligent	thông minh, sáng trí
+intend	ý định, có ý định
+intended	có ý định, có dụng ý
+intention	ý định, mục đích
+interest	sự thích thú, sự quan tâm, chú ý; làm quan tâm, làm chú ý
+interested	có thích thú, có quan tâm, có chú ý
+interesting	làm thích thú, làm quan tâm, làm chú ý
+interior	phần trong, phía trong; ở trong, ở phía trong
+internal	ở trong, bên trong, nội địa
+international	quốc tế
+internet	liên mạng
+interpret	giải thích
+interpretation	sự giải thích
+interrupt	làm gián đoạn, ngắt lời
