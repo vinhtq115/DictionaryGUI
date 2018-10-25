@@ -26,10 +26,10 @@ public class Word implements Comparable {
     @Override
     public int compareTo(Object o) {
         Word a = (Word) o;
-        if (!word_target.equals(a.getWordTarget()))
-            return word_target.compareTo(a.getWordTarget());
+        if (!word_target.toLowerCase().equals(a.getWordTarget().toLowerCase()))
+            return word_target.toLowerCase().compareTo(a.getWordTarget().toLowerCase());
         else
-            return word_explain.compareTo(a.getWordExplain());
+            return word_explain.toLowerCase().compareTo(a.getWordExplain().toLowerCase());
     }
     @Override
     public String toString() {

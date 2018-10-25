@@ -18,6 +18,7 @@ public class Controller {
     @FXML ListView<Word> wordList = new ListView<>();
     ObservableList<Word> words = FXCollections.observableArrayList();
     @FXML TextArea resultField;
+    @FXML TextField searchField;
 
     private Main main;
     private DictionaryManagement manager;
@@ -37,7 +38,16 @@ public class Controller {
         });
     }
 
-    public void wordSelected() {
-
+    public void userSearch() {
+        if (searchField.getText().equals("")) {
+            wordList.setItems(words);
+            return;
+        }
+        String finder = searchField.getText().toLowerCase();
+        ObservableList<Word> wordsFind = FXCollections.observableArrayList();
+        for (int i = 0; i < manager.EnVi.getSize(); i++)
+            if (manager.EnVi.getWord(i).getWordTarget().toLowerCase().indexOf(finder) == 0)
+                wordsFind.add(manager.EnVi.getWord(i));
+        wordList.setItems(wordsFind);
     }
 }
