@@ -23,22 +23,12 @@ public class Dictionary {
         sort();
         return dictionary.indexOf(temp);
     }
-    public void delete(String en) {
-        for (int i = 0; i < dictionary.size(); i++)
-            if (dictionary.elementAt(i).getWordTarget().equals(en))
-                dictionary.remove(i);
-        NumberOfWord = dictionary.size();
-    }
     public void deleteAt(int index) {
         dictionary.remove(index);
         NumberOfWord = dictionary.size();
     }
     public String getEn(int index) {
         return dictionary.elementAt(index).getWordTarget();
-    }
-    public void setWord(int index, String en, String vi) {
-        dictionary.elementAt(index).setWordTarget(en);
-        dictionary.elementAt(index).setWordExplain(vi);
     }
     public void setWord(int index, Word word) {
         dictionary.set(index, word);

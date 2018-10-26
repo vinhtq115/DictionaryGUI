@@ -4,16 +4,11 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.GridPane;
-import javafx.util.Pair;
 import model.DictionaryManagement;
 import model.Word;
-import org.w3c.dom.Text;
 
 import java.util.Optional;
 
