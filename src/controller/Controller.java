@@ -24,11 +24,10 @@ public class Controller {
     @FXML MenuItem editButton;
 
     private Main main;
-    private DictionaryManagement manager;
 
     public void setMain(Main main) {
         this.main = main;
-        manager = new DictionaryManagement();
+        DictionaryManagement manager = new DictionaryManagement();
         if (!manager.insertFromFile()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -43,10 +42,15 @@ public class Controller {
             words.add(manager.EnVi.getWord(i));
         // Display english word
         wordList.setItems(words);
+        manager = null;
         // Handle mouse click on ListView
-        displayResult();
+        displayResult(false);
     }
-    public void displayResult() {
+    public void displayResult(boolean Null) {
+        if (Null) {
+            resultField.setText(null);
+            return;
+        }
         wordList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -75,7 +79,7 @@ public class Controller {
     public void deleteButtonAction() {
         Word temp = wordList.getSelectionModel().getSelectedItem(); // Get index of selected word
         words.remove(temp);
-        resultField.setText(null);
+        displayResult(true);
         userSearch();
     }
     // Handle add button
