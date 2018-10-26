@@ -122,7 +122,7 @@ camera	máy ảnh
 camp	trại, chỗ cắm trại; cắm trại, hạ trại
 campaig	chiến dịch, cuộc vận động
 camping	sự cắm trại
-can modal	có thể; nhà tù, nhà giam, bình, ca đựng
+can	có thể; nhà tù, nhà giam, bình, ca đựng
 cancel	hủy bỏ, xóa bỏ
 cancer	bệnh ung thư
 candidate	người ứng cử, thí sinh, người dự thi

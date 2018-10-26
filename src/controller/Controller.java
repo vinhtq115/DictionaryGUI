@@ -13,8 +13,9 @@ import model.Word;
 import java.util.Optional;
 
 public class Controller {
-    @FXML ListView<Word> wordList = new ListView<>();
-    ObservableList<Word> words = FXCollections.observableArrayList();
+    @FXML ListView<Word> wordList = new ListView<>(); // For display
+    ObservableList<Word> words = FXCollections.observableArrayList(); // Array of words
+    ObservableList<Word> wordsFind; // Found word
     @FXML TextArea resultField;
     @FXML TextField searchField;
     @FXML MenuItem closeButton;
@@ -43,10 +44,13 @@ public class Controller {
         // Display english word
         wordList.setItems(words);
         // Handle mouse click on ListView
+        displayResult();
+    }
+    public void displayResult() {
         wordList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                resultField.setText(manager.EnVi.getVi(wordList.getSelectionModel().getSelectedIndex()));
+                resultField.setText(wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null);
             }
         });
     }
@@ -57,22 +61,22 @@ public class Controller {
     // Handle search bar
     public void userSearch() {
         if (searchField.getText().equals("")) {
-            wordList.setItems(words);
+            wordList.setItems(words); // Restore words array
             return;
         }
         String finder = searchField.getText().toLowerCase();
-        ObservableList<Word> wordsFind = FXCollections.observableArrayList();
-        for (int i = 0; i < manager.EnVi.getSize(); i++)
-            if (manager.EnVi.getWord(i).getWordTarget().toLowerCase().indexOf(finder) == 0)
-                wordsFind.add(manager.EnVi.getWord(i));
+        wordsFind = FXCollections.observableArrayList();
+        for (int i = 0; i < words.size(); i++)
+            if (words.get(i).getWordTarget().toLowerCase().indexOf(finder) == 0)
+                wordsFind.add(words.get(i));
         wordList.setItems(wordsFind);
     }
     // Handle delete button
     public void deleteButtonAction() {
-        int index = wordList.getSelectionModel().getSelectedIndex(); // Get index of selected word
-        manager.EnVi.deleteAt(index);
-        words.remove(index);
-        wordList.setItems(words);
+        Word temp = wordList.getSelectionModel().getSelectedItem(); // Get index of selected word
+        words.remove(temp);
+        resultField.setText(null);
+        userSearch();
     }
     // Handle add button
     public void addButtonAction() {
@@ -102,15 +106,16 @@ public class Controller {
                     return; // Quit if field is empty
             }
         }
-        int index = manager.EnVi.add(enWord.get(), viWord.get());
-        words.add(index, manager.EnVi.getWord(index));
-        wordList.setItems(words);
+        Word temp = new Word(enWord.get(), viWord.get());
+        words.add(temp);
+        words.sort(Word::compareTo);
+        userSearch();
     }
     // Handle edit button
     public void editButtonAction() {
-        int index = wordList.getSelectionModel().getSelectedIndex(); // Get index of selected word
-        String currentEn = manager.EnVi.getEn(index);
-        String currentVi = manager.EnVi.getVi(index);
+        Word temp = wordList.getSelectionModel().getSelectedItem(); // Get index of selected word
+        String currentEn = temp.getWordTarget();
+        String currentVi = temp.getWordExplain();
         TextInputDialog dialog = new TextInputDialog(currentEn);
         dialog.setTitle("Edit");
         dialog.setHeaderText("Change English word");
@@ -140,18 +145,11 @@ public class Controller {
         }
         if (currentEn.equals(enWord.get()) && currentVi.equals(viWord.get()))
             return; // Quit if nothing change
-        Word temp = new Word(enWord.get(), viWord.get());
-        manager.EnVi.setWord(index, temp);
-        if (currentEn.equals(enWord.get())) {
-            words.set(index, manager.EnVi.getWord(index));
-        }
-        else {
-            manager.EnVi.sort();
-            words.remove(index);
-            int indexNew = manager.EnVi.getIndex(temp);
-            words.add(indexNew, temp);
-        }
-        wordList.setItems(words);
-        resultField.setText(manager.EnVi.getVi(wordList.getSelectionModel().getSelectedIndex()));
+        if (currentEn.equals(enWord.get()))
+            temp.setWordExplain(viWord.get());
+        if (currentVi.equals(viWord.get()))
+            temp.setWordTarget(enWord.get());
+        words.sort(Word::compareTo);
+        userSearch();
     }
 }
