@@ -4,7 +4,7 @@ public class Word implements Comparable {
     private String word_target;
     private String word_explain;
 
-    Word(String en, String vi) {
+    public Word(String en, String vi) {
         word_target = en;
         word_explain = vi;
     }

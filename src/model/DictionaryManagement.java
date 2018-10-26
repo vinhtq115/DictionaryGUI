@@ -8,7 +8,7 @@ import java.io.*;
 public class DictionaryManagement {
     public Dictionary EnVi = new Dictionary();
 
-    public void insertFromFile() {
+    public boolean insertFromFile() {
         try {
             File dicFile = new File("dictionaries.txt");
             FileReader fileReader = new FileReader(dicFile);
@@ -21,9 +21,11 @@ public class DictionaryManagement {
             }
             EnVi.sort();
             reader.close();
+            return true;
         }
         catch (IOException e) {
             System.out.println("Can't open dictionaries.txt!");
+            return false;
         }
     }
     public void dictionaryLookup() {

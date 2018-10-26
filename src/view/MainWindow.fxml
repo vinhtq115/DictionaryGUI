@@ -11,17 +11,14 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
+                  <MenuItem fx:id="editButton" mnemonicParsing="false" onAction="#editButtonAction" text="Edit" />
+              <MenuItem fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonAction" text="Delete" />
             </items>
           </Menu>
         </menus>
