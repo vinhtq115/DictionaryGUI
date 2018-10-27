@@ -25,6 +25,7 @@ public class Controller {
     @FXML MenuItem deleteButton;
     @FXML MenuItem addButton;
     @FXML MenuItem editButton;
+    @FXML MenuItem exportButton;
     int[] startingIndex = new int[26];
 
     private Main main;
@@ -67,6 +68,8 @@ public class Controller {
             @Override
             public void handle(MouseEvent event) {
                 resultField.clear();
+                if (wordList.getSelectionModel().getSelectedItem() == null)
+                    return;
                 String enWord = wordList.getSelectionModel().getSelectedItem().getWordTarget();
                 englishWordField.setText(enWord);
                 resultField.appendText((wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null) + "\n\n");
@@ -132,6 +135,8 @@ public class Controller {
         Word temp = new Word(enWord.get(), viWord.get());
         words.add(temp);
         words.sort(Word::compareTo);
+        for (int i = (enWord.get().toLowerCase().charAt(0)-97+1); i < 26; i++)
+            startingIndex[i]++;
         userSearch();
     }
     // Handle edit button
@@ -181,5 +186,9 @@ public class Controller {
             return;
         TextToSpeech tts = new TextToSpeech();
         tts.speak(wordList.getSelectionModel().getSelectedItem().getWordTarget());
+    }
+    // Handle export button
+    public void exportButtonAction() {
+        new DictionaryManagement().exportToFile(words);
     }
 }

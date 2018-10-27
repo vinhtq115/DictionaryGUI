@@ -414,6 +414,7 @@ pan	cái chảo
 performance	hiệu suất
 puma	cọp Mỹ
 query	truy vấn
+queue	hàng chờ
 quit	bỏ
 raise	nâng
 remember	nhớ lại
@@ -430,8 +431,8 @@ up	lên
 virtual	ảo
 volcano	núi lửa
 vulnerable	dễ bị tổn thương
-wide	rộng
 wet	ướt
+wide	rộng
 work	làm việc
 xylophone	mộc cầm
 yellow	màu vàng

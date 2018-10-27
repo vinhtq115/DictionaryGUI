@@ -1,5 +1,7 @@
 package model;
 
+import javafx.collections.ObservableList;
+
 import java.io.*;
 
 public class DictionaryManagement {
@@ -23,6 +25,21 @@ public class DictionaryManagement {
         catch (IOException e) {
             System.out.println("Can't open dictionaries.txt!");
             return false;
+        }
+    }
+    public void exportToFile(ObservableList<Word> words) {
+        try {
+            File dicFile = new File("dictionaries.txt");
+            FileWriter fileWriter = new FileWriter(dicFile);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+
+            for (int i = 0; i < words.size(); i++) {
+                writer.write(words.get(i).getWordTarget() + "\t" + words.get(i).getWordExplain() + (i==words.size()-1?"":"\n"));
+            }
+            writer.close();
+        }
+        catch (IOException e) {
+            System.out.println("Can't write!");
         }
     }
 }
