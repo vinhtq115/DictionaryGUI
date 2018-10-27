@@ -76,7 +76,7 @@ public class Controller {
                 resultField.appendText("Synonyms: ");
                 String[] synonyms = GetOnlineResources.getSynonyms(enWord);
                 for (int i = 0; i < synonyms.length; i++)
-                    resultField.appendText(synonyms[i] + (i == synonyms.length-1?"":", "));
+                    resultField.appendText(synonyms[i] + (i == synonyms.length-1?"\n":", "));
             }
         });
     }
