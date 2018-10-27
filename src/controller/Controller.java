@@ -163,6 +163,8 @@ public class Controller {
     }
     // Handle speech button
     public void speechButtonAction() {
+        if (wordList.getSelectionModel().getSelectedItem() == null)
+            return;
         TextToSpeech tts = new TextToSpeech();
         tts.speak(wordList.getSelectionModel().getSelectedItem().getWordTarget());
     }
