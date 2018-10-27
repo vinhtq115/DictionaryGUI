@@ -17,8 +17,6 @@ public class Controller {
     ObservableList<Word> words = FXCollections.observableArrayList(); // Array of words
     ObservableList<Word> wordsFind; // Found word
     @FXML TextArea resultField;
-    @FXML Label englishWordField;
-    @FXML Button speechButton;
     @FXML TextField searchField;
     @FXML MenuItem closeButton;
     @FXML MenuItem deleteButton;
@@ -50,16 +48,13 @@ public class Controller {
     }
     public void displayResult(boolean Null) {
         if (Null) {
-            englishWordField.setText("Choose a word to continue...");
             resultField.setText(null);
             return;
         }
         wordList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                resultField.clear();
-                englishWordField.setText(wordList.getSelectionModel().getSelectedItem().getWordTarget());
-                resultField.appendText(wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null);
+                resultField.setText(wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null);
             }
         });
     }
@@ -160,10 +155,5 @@ public class Controller {
             temp.setWordTarget(enWord.get());
         words.sort(Word::compareTo);
         userSearch();
-    }
-    // Handle speech button
-    public void speechButtonAction() {
-        TextToSpeech tts = new TextToSpeech();
-        tts.speak(wordList.getSelectionModel().getSelectedItem().getWordTarget());
     }
 }

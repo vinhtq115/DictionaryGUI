@@ -27,7 +27,6 @@ public class Main extends Application {
             mainWindowController.setMain(this);
 
             Scene scene = new Scene(pane);
-            TextToSpeech tts = new TextToSpeech();
 
             primaryStage.setScene(scene);
             primaryStage.setTitle("Dictionary");
