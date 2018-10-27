@@ -378,6 +378,9 @@ grandfather	ông
 grandmother	bà
 grandparent	ông bà
 grandson	cháu trai
+handle	xử lý
+hot	nóng
+huge	khổng lồ
 intelligent	thông minh, sáng trí
 intend	ý định, có ý định
 intended	có ý định, có dụng ý
@@ -392,3 +395,49 @@ internet	liên mạng
 interpret	giải thích
 interpretation	sự giải thích
 interrupt	làm gián đoạn, ngắt lời
+jam	mứt
+jealous	ghen tuông
+jigsaw	xếp hình
+kiss	hôn
+kite	cánh diều
+lips	đôi môi
+look	nhìn
+meet	gặp
+more	hơn
+must	phải
+no	không
+nurse	y tá
+oak	cây sồi
+obtain	đạt được
+overcome	vượt qua
+pan	cái chảo
+performance	hiệu suất
+puma	cọp Mỹ
+query	truy vấn
+quit	bỏ
+raise	nâng
+remember	nhớ lại
+rock	đá
+russia	nước Nga
+salt	muối
+sense	cảm nhận
+session	phiên
+take	lấy
+ten	mười
+tight	chặt chẽ
+under	dưới
+up	lên
+virtual	ảo
+volcano	núi lửa
+vulnerable	dễ bị tổn thương
+wide	rộng
+wet	ướt
+work	làm việc
+xylophone	mộc cầm
+yellow	màu vàng
+yes	vâng
+you	bạn
+your	của bạn
+zebra	ngựa vằn
+zero	số không
+zipper	dây kéo

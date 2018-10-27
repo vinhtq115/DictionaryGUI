@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import model.DictionaryManagement;
 import model.Word;
 
+import java.util.Arrays;
 import java.util.Optional;
 
 public class Controller {
@@ -24,27 +25,35 @@ public class Controller {
     @FXML MenuItem deleteButton;
     @FXML MenuItem addButton;
     @FXML MenuItem editButton;
+    int[] startingIndex = new int[26];
 
     private Main main;
 
     public void setMain(Main main) {
         this.main = main;
-        DictionaryManagement manager = new DictionaryManagement();
-        if (!manager.insertFromFile()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("File not found");
-            alert.setContentText("Can't open dictionaries.txt!");
-            alert.showAndWait();
-            Platform.exit();
+        Arrays.fill(startingIndex, -1);
+        {
+            DictionaryManagement manager = new DictionaryManagement();
+            if (!manager.insertFromFile()) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("File not found");
+                alert.setContentText("Can't open dictionaries.txt!");
+                alert.showAndWait();
+                Platform.exit();
 
-            return;
+                return;
+            }
+            for (int i = 0; i < manager.EnVi.getSize(); i++) {
+                words.add(manager.EnVi.getWord(i));
+                int first = words.get(i).getWordTarget().toLowerCase().charAt(0) - 97;
+                if (startingIndex[first] == -1)
+                    startingIndex[first] = i;
+            }
+            // Display english word
+            wordList.setItems(words);
+
         }
-        for (int i = 0; i < manager.EnVi.getSize(); i++)
-            words.add(manager.EnVi.getWord(i));
-        // Display english word
-        wordList.setItems(words);
-        manager = null;
         // Handle mouse click on ListView
         displayResult(false);
     }
@@ -75,7 +84,7 @@ public class Controller {
         }
         String finder = searchField.getText().toLowerCase();
         wordsFind = FXCollections.observableArrayList();
-        for (int i = 0; i < words.size(); i++)
+        for (int i = startingIndex[finder.charAt(0)-97]; i < (finder.charAt(0)-97==25?words.size():startingIndex[finder.charAt(0)-96]); i++)
             if (words.get(i).getWordTarget().toLowerCase().indexOf(finder) == 0)
                 wordsFind.add(words.get(i));
         wordList.setItems(wordsFind);
