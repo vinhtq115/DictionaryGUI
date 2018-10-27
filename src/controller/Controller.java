@@ -67,8 +67,13 @@ public class Controller {
             @Override
             public void handle(MouseEvent event) {
                 resultField.clear();
-                englishWordField.setText(wordList.getSelectionModel().getSelectedItem().getWordTarget());
-                resultField.appendText(wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null);
+                String enWord = wordList.getSelectionModel().getSelectedItem().getWordTarget();
+                englishWordField.setText(enWord);
+                resultField.appendText((wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null) + "\n\n");
+                resultField.appendText("Synonyms: ");
+                String[] synonyms = GetOnlineResources.getSynonyms(enWord);
+                for (int i = 0; i < synonyms.length; i++)
+                    resultField.appendText(synonyms[i] + (i == synonyms.length-1?"":", "));
             }
         });
     }
