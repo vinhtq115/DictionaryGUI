@@ -57,12 +57,20 @@ class GetOnlineResources {
             data.add(getPronunciation(JSONobj.getJSONArray("phonetic")));
             data.add(getExample(JSONobj.getJSONObject("meaning")));
             data.add(getSynonyms(JSONobj.getJSONObject("meaning")));
+            data.add(getType(JSONobj.getJSONObject("meaning")));
             return data;
         }
         catch (Exception e) {
             e.printStackTrace(); // Print error
             return null;
         }
+    }
+    private static Vector<String> getType(JSONObject meaning) {
+        Vector<String> types = new Vector<>();
+        JSONArray type = meaning.names();
+        for (int i = 0; i < type.length(); i++)
+            types.add(type.getString(i));
+        return types;
     }
     private static Vector<String> getPronunciation(JSONArray phonetic) {
         Vector<String> pronunciation = new Vector<>();

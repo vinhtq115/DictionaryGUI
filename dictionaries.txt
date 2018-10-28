@@ -100,6 +100,7 @@ barrier	đặt chướng ngại vật
 base	cơ sở, cơ bản, nền móng; đặt tên, đặt cơ sở trên cái gì
 basic	cơ bản, cơ sở
 basically	cơ bản, về cơ bản
+battery	pin
 become	trở thành, trở nên
 bed	cái giường
 bedroom	phòng ngủ

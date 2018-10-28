@@ -10,10 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import model.DictionaryManagement;
 import model.Word;
 
@@ -71,7 +68,7 @@ public class Controller {
     }
     private void displayResult(boolean Null) {
         if (Null) {
-            englishWordField.setText("Choose a word to continue...");
+            englishWordField.setText("Chọn một từ để tiếp tục...");
             resultField.setText(null);
             pronunciationField.setText(null);
             return;
@@ -87,21 +84,27 @@ public class Controller {
                 englishWordField.setText(enWord);
                 resultField.appendText((wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null) + "\n\n"); // Get meaning
                 if (GetOnlineResources.checkConnection()) {
-                    String pronunciation = "Pronunciation: ";
+                    String pronunciation = "Phiên âm: ";
                     Vector<Vector<String>> data = GetOnlineResources.grabData(enWord);
                     // data[0] = pronunciation
                     // data[1] = example
                     // data[2] = synonyms
+                    // data[3] = type
                     Vector<String> allPronunciation = data.get(0);
                     for (int i = 0; i < allPronunciation.size(); i++)
                         pronunciation += (allPronunciation.elementAt(i) + (i == allPronunciation.size() - 1 ? "" : ", "));
                     pronunciationField.setText(pronunciation);
-                    resultField.appendText("Examples:\n");
+                    resultField.appendText("Kiểu: ");
+                    Vector<String> type = data.get(3);
+                    for (int i = 0; i < type.size(); i++) {
+                        resultField.appendText(type.elementAt(i) + (i==type.size()-1?"":", "));
+                    }
+                    resultField.appendText("\nVí dụ:\n");
                     Vector<String> allExample = data.get(1);
                     for (int i = 0; i < allExample.size(); i++) {
                         resultField.appendText("\t" + allExample.elementAt(i) + "\n");
                     }
-                    resultField.appendText("\nSynonyms: ");
+                    resultField.appendText("\nTừ đồng nghĩa: ");
                     Vector<String> synonyms = data.get(2);
                     for (int i = 0; i < synonyms.size(); i++)
                         resultField.appendText(synonyms.elementAt(i) + (i == synonyms.size() - 1 ? "\n" : ", "));
@@ -137,8 +140,8 @@ public class Controller {
     public void addButtonAction() {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Dictionary");
-        dialog.setHeaderText("Add a new word");
-        dialog.setContentText("Enter English word:");
+        dialog.setHeaderText("Thêm từ mới");
+        dialog.setContentText("Nhập từ tiếng Anh:");
         Optional<String> enWord = dialog.showAndWait();
         Optional<String> viWord;
         while (enWord.isPresent() && enWord.get().equals("")) {
@@ -150,8 +153,8 @@ public class Controller {
         else {
             dialog = new TextInputDialog();
             dialog.setTitle("Dictionary");
-            dialog.setHeaderText("Add a new word");
-            dialog.setContentText("Enter Vietnamese meaning:");
+            dialog.setHeaderText("Thêm từ mới");
+            dialog.setContentText("Nhập nghĩa tiếng Việt:");
 
             viWord = dialog.showAndWait();
             while (viWord.isPresent() && viWord.get().equals("")) {
@@ -174,9 +177,9 @@ public class Controller {
         String currentEn = temp.getWordTarget();
         String currentVi = temp.getWordExplain();
         TextInputDialog dialog = new TextInputDialog(currentEn);
-        dialog.setTitle("Edit");
-        dialog.setHeaderText("Change English word");
-        dialog.setContentText("Change " + currentEn + " to: ");
+        dialog.setTitle("Sửa");
+        dialog.setHeaderText("Sửa từ tiếng Anh");
+        dialog.setContentText("Sửa " + currentEn + " thành: ");
         Optional<String> enWord = dialog.showAndWait();
         Optional<String> viWord;
         while (enWord.isPresent() && enWord.get().equals("")) {
@@ -187,9 +190,9 @@ public class Controller {
             return; // Quit if field is empty
         else {
             dialog = new TextInputDialog(currentVi);
-            dialog.setTitle("Edit");
-            dialog.setHeaderText("Change Vietnamese meaning");
-            dialog.setContentText("Change Vietnamese meaning to:");
+            dialog.setTitle("Sửa");
+            dialog.setHeaderText("Sửa nghĩa tiếng Việt");
+            dialog.setContentText("Đổi nghĩa tiếng Việt thành:");
 
             viWord = dialog.showAndWait();
             while (viWord.isPresent() && viWord.get().equals("")) {

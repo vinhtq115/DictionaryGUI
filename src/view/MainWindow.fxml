@@ -11,19 +11,19 @@
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                  <MenuItem fx:id="exportButton" mnemonicParsing="false" onAction="#exportButtonAction" text="Export to dictionaries.txt" />
+                  <MenuItem fx:id="exportButton" mnemonicParsing="false" onAction="#exportButtonAction" text="Xuất ra dictionaries.txt" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+                        <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonAction" text="Đóng" />
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
+                <Menu mnemonicParsing="false" text="Sửa đổi">
                     <items>
-                        <MenuItem fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
-                        <MenuItem fx:id="editButton" mnemonicParsing="false" onAction="#editButtonAction" text="Edit" />
-                        <MenuItem fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonAction" text="Delete" />
+                        <MenuItem fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" text="Thêm" />
+                        <MenuItem fx:id="editButton" mnemonicParsing="false" onAction="#editButtonAction" text="Sửa" />
+                        <MenuItem fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonAction" text="Xóa" />
                     </items>
                 </Menu>
-            <Menu mnemonicParsing="false" text="Tool">
+            <Menu mnemonicParsing="false" text="Công cụ">
               <items>
                 <MenuItem fx:id="googleTranslateButton" mnemonicParsing="false" onAction="#openGoogleTranslate" text="Google Translate" />
               </items>
@@ -52,13 +52,13 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                     <children>
                         <TextArea id="resultField" fx:id="resultField" editable="false" layoutY="47.0" prefHeight="326.0" prefWidth="434.0" snapToPixel="false" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0" />
-                        <Button fx:id="speechButton" layoutX="379.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#speechButtonAction" text="Speech" AnchorPane.rightAnchor="0.0" />
+                        <Button fx:id="speechButton" layoutX="379.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#speechButtonAction" text="Phát âm" AnchorPane.rightAnchor="0.0" />
                         <Label fx:id="englishWordField" layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="372.0" text="English word here" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="2.0">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Label>
-                  <Label fx:id="pronunciationField" layoutX="7.0" layoutY="29.0" prefHeight="17.0" prefWidth="425.0" text="Pronunciation: " AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="29.0" />
+                  <Label fx:id="pronunciationField" layoutX="7.0" layoutY="29.0" prefHeight="17.0" prefWidth="425.0" text="Phát âm: " AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="29.0" />
                     </children>
                 </AnchorPane>
             </items>
