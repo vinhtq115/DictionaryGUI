@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
     <children>
         <MenuBar prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <menus>
@@ -29,11 +29,11 @@
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
                     <children>
-                        <SplitPane dividerPositions="0.8861788617886179" orientation="VERTICAL" prefHeight="371.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <SplitPane dividerPositions="0.8861788617886179" orientation="VERTICAL" prefHeight="373.0" prefWidth="212.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <items>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="326.0" prefWidth="212.0">
                                     <children>
-                                        <ListView fx:id="wordList" prefHeight="348.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                        <ListView fx:id="wordList" prefHeight="326.0" prefWidth="212.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                     </children></AnchorPane>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
                                     <children>
@@ -48,11 +48,12 @@
                     <children>
                         <TextArea id="resultField" fx:id="resultField" editable="false" layoutY="47.0" prefHeight="326.0" prefWidth="434.0" snapToPixel="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0" />
                         <Button fx:id="speechButton" layoutX="379.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#speechButtonAction" text="Speech" AnchorPane.rightAnchor="0.0" />
-                        <Label fx:id="englishWordField" layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="372.0" text="English word here" AnchorPane.leftAnchor="6.0">
+                        <Label fx:id="englishWordField" layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="372.0" text="English word here" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="2.0">
                             <font>
                                 <Font name="System Bold" size="18.0" />
                             </font>
                         </Label>
+                  <Label fx:id="pronunciationField" layoutX="7.0" layoutY="29.0" prefHeight="17.0" prefWidth="425.0" text="Pronunciation: " AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="29.0" />
                     </children>
                 </AnchorPane>
             </items>

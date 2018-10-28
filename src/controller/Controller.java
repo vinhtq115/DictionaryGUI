@@ -12,13 +12,15 @@ import model.Word;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.Vector;
 
 public class Controller {
     @FXML ListView<Word> wordList = new ListView<>(); // For display
-    ObservableList<Word> words = FXCollections.observableArrayList(); // Array of words
-    ObservableList<Word> wordsFind; // Found word
+    private ObservableList<Word> words = FXCollections.observableArrayList(); // Array of words
+    private ObservableList<Word> wordsFind; // Found word
     @FXML TextArea resultField;
     @FXML Label englishWordField;
+    @FXML Label pronunciationField;
     @FXML Button speechButton;
     @FXML TextField searchField;
     @FXML MenuItem closeButton;
@@ -26,11 +28,11 @@ public class Controller {
     @FXML MenuItem addButton;
     @FXML MenuItem editButton;
     @FXML MenuItem exportButton;
-    int[] startingIndex = new int[26];
+    private int[] startingIndex = new int[26];
 
     private Main main;
 
-    public void setMain(Main main) {
+    void setMain(Main main) {
         this.main = main;
         Arrays.fill(startingIndex, -1);
         {
@@ -58,25 +60,43 @@ public class Controller {
         // Handle mouse click on ListView
         displayResult(false);
     }
-    public void displayResult(boolean Null) {
+    private void displayResult(boolean Null) {
         if (Null) {
             englishWordField.setText("Choose a word to continue...");
             resultField.setText(null);
+            pronunciationField.setText(null);
             return;
         }
         wordList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 resultField.clear();
+                pronunciationField.setText(null);
                 if (wordList.getSelectionModel().getSelectedItem() == null)
                     return;
-                String enWord = wordList.getSelectionModel().getSelectedItem().getWordTarget();
+                String enWord = wordList.getSelectionModel().getSelectedItem().getWordTarget(); // enWord: english word
                 englishWordField.setText(enWord);
-                resultField.appendText((wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null) + "\n\n");
-                resultField.appendText("Synonyms: ");
-                String[] synonyms = GetOnlineResources.getSynonyms(enWord);
-                for (int i = 0; i < synonyms.length; i++)
-                    resultField.appendText(synonyms[i] + (i == synonyms.length-1?"\n":", "));
+                resultField.appendText((wordList.getSelectionModel().getSelectedItem()!=null?wordList.getSelectionModel().getSelectedItem().getWordExplain():null) + "\n\n"); // Get meaning
+                if (GetOnlineResources.checkConnection()) {
+                    String pronunciation = "Pronunciation: ";
+                    Vector<Vector<String>> data = GetOnlineResources.grabData(enWord);
+                    // data[0] = pronunciation
+                    // data[1] = example
+                    // data[2] = synonyms
+                    Vector<String> allPronunciation = data.get(0);
+                    for (int i = 0; i < allPronunciation.size(); i++)
+                        pronunciation += (allPronunciation.elementAt(i) + (i == allPronunciation.size() - 1 ? "" : ", "));
+                    pronunciationField.setText(pronunciation);
+                    resultField.appendText("Examples:\n");
+                    Vector<String> allExample = data.get(1);
+                    for (int i = 0; i < allExample.size(); i++) {
+                        resultField.appendText("\t" + allExample.elementAt(i) + "\n");
+                    }
+                    resultField.appendText("\nSynonyms: ");
+                    Vector<String> synonyms = data.get(2);
+                    for (int i = 0; i < synonyms.size(); i++)
+                        resultField.appendText(synonyms.elementAt(i) + (i == synonyms.size() - 1 ? "\n" : ", "));
+                }
             }
         });
     }
@@ -184,8 +204,12 @@ public class Controller {
     public void speechButtonAction() {
         if (wordList.getSelectionModel().getSelectedItem() == null)
             return;
-        TextToSpeech tts = new TextToSpeech();
-        tts.speak(wordList.getSelectionModel().getSelectedItem().getWordTarget());
+        if (GetOnlineResources.checkConnectionToGoogle()) {
+            TextToSpeech tts = new TextToSpeech();
+            tts.speak(wordList.getSelectionModel().getSelectedItem().getWordTarget());
+        }
+        else
+            Alerter.CannotConnectToGoogle();
     }
     // Handle export button
     public void exportButtonAction() {

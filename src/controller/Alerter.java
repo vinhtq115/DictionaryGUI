@@ -2,19 +2,26 @@ package controller;
 
 import javafx.scene.control.Alert;
 
-public class Alerter {
-    public static void EmptyEnglishWord() {
+class Alerter {
+    static void EmptyEnglishWord() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText("Empty English word");
         alert.setContentText("English word must not be empty!");
         alert.showAndWait();
     }
-    public static void EmptyVietnameseMeaning() {
+    static void EmptyVietnameseMeaning() {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("Error");
         alert.setHeaderText("Empty Vietnamese meaning");
         alert.setContentText("Vietnamese meaning must not be empty!");
+        alert.showAndWait();
+    }
+    static void CannotConnectToGoogle() {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText("Can't establish connection to Google server");
+        alert.setContentText("Connection to Google is needed to use this feature.");
         alert.showAndWait();
     }
 }

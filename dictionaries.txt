@@ -53,11 +53,9 @@ aim	sự nhắm , mục tiêu, ý định; nhắm, tập trung, hướng vào
 air	không khí, bầu không khí, không gian
 aircraft	máy bay, khí cầu
 alarm	báo động, báo nguy
-alarmin	làm lo sợ, làm hốt hoảng, làm sợ hãi
 alcohol	rượu cồn
 alive	sống, vẫn còn sống, còn tồn tại
 all	tất cả
-all right	tốt, ổn, khỏe mạnh; được
 allied	liên minh, đồng minh, thông
 allow	cho phép, để cho
 ally	nước đồng minh, liên minh; liên kết, lien minh, kết thông gia
@@ -73,7 +71,6 @@ amazed	kinh ngạc, sửng sốt
 amazing	kinh ngạc, sửng sốt
 ambition	hoài bão, khát vọng
 ambulance	xe cứu thương, xe cấp cứu
-among	giữa, ở giữa
 avoid	tránh, tránh xa
 awake	đánh thức, làm thức dậy
 award	phần thưởng; tặng, thưởng
@@ -108,7 +105,6 @@ bed	cái giường
 bedroom	phòng ngủ
 beef	thịt bò
 beer	rượu bia
-befor	trước, đằng trước
 begin	bắt đầu, khởi đầu
 beginning	phần đầu, lúc bắt đầu, lúc khởi đầu
 behalf	sự thay mặt
@@ -120,14 +116,12 @@ bell	cái chuông, tiếng chuông
 belong	thuộc về, của, thuộc quyền sở hữu
 camera	máy ảnh
 camp	trại, chỗ cắm trại; cắm trại, hạ trại
-campaig	chiến dịch, cuộc vận động
 camping	sự cắm trại
 can	có thể; nhà tù, nhà giam, bình, ca đựng
 cancel	hủy bỏ, xóa bỏ
 cancer	bệnh ung thư
 candidate	người ứng cử, thí sinh, người dự thi
 candy	kẹo
-cannot	không thể
 cap	mũ lưỡi trai, mũ vải
 capable	có tài, có năng lực; có khả năng, cả gan
 care	sự chăm sóc, chăm nom; chăm sóc
@@ -367,9 +361,6 @@ go wrong	mắc lỗi, sai lầm
 god	thần, chúa
 gold	vàng; bằng vàng
 good	tốt, hay, tuyệt; điều tốt, điều thiện
-good at	tiến bộ ở
-good for	có lợi cho
-good, well	tốt, khỏe
 grammar	văn phạm
 grand	rộng lớn, vĩ đại
 grandchild	cháu
@@ -423,6 +414,7 @@ russia	nước Nga
 salt	muối
 sense	cảm nhận
 session	phiên
+sin	tội lỗi
 take	lấy
 ten	mười
 tight	chặt chẽ
