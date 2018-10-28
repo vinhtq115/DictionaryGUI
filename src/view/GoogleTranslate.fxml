@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -21,11 +20,12 @@
                                     <Font size="18.0" />
                                  </font>
                               </Label>
+                              <Button layoutX="280.0" layoutY="2.0" mnemonicParsing="false" onAction="#translateStart" text="Translate" />
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                            <children>
-                              <TextArea fx:id="inputField" layoutX="14.0" layoutY="14.0" onKeyTyped="#inputFieldAction" prefHeight="366.0" prefWidth="344.0" promptText="Type here..." wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <TextArea fx:id="inputField" layoutX="14.0" layoutY="14.0" prefHeight="366.0" prefWidth="344.0" promptText="Type here..." wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            </children>
                         </AnchorPane>
                     </items>

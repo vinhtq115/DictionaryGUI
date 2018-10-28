@@ -6,9 +6,9 @@ import javazoom.jl.player.advanced.AdvancedPlayer;
 
 import java.io.IOException;
 
-public class TextToSpeech {
-    SynthesiserV2 synthesiser = new SynthesiserV2("AIzaSyC8ypj4Tk5HlrTZK9-PumktkcDTzTwd2gs");
-    public void speak(String text) {
+class TextToSpeech {
+    private SynthesiserV2 synthesiser = new SynthesiserV2("AIzaSyC8ypj4Tk5HlrTZK9-PumktkcDTzTwd2gs");
+    void speak(String text) {
         Thread thread = new Thread (() -> {
             try {
                 AdvancedPlayer player = new AdvancedPlayer(synthesiser.getMP3Data(text));
