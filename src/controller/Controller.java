@@ -5,11 +5,19 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import model.DictionaryManagement;
 import model.Word;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.Vector;
@@ -28,6 +36,7 @@ public class Controller {
     @FXML MenuItem addButton;
     @FXML MenuItem editButton;
     @FXML MenuItem exportButton;
+    @FXML MenuItem googleTranslateButton;
     private int[] startingIndex = new int[26];
 
     private Main main;
@@ -214,5 +223,22 @@ public class Controller {
     // Handle export button
     public void exportButtonAction() {
         new DictionaryManagement().exportToFile(words);
+    }
+    // Handle Google Translate button
+    public void openGoogleTranslate() {
+        if (GetOnlineResources.checkConnectionToGoogle()) { // Check connection to Google
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/GoogleTranslate.fxml"));
+                Parent root = (Parent) loader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Google Translate");
+                stage.setScene(new Scene(root));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+            Alerter.CannotConnectToGoogle();
     }
 }
